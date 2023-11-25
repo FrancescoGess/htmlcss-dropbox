@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: "Sharp Grotesk 23", "Sharp Grotesk 23 KR", "Sharp Grotesk 23 Thai", "Helvetica (Sharp Grotesk 23 Fallback)", "Arial (Sharp Grotesk 23 Fallback)", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 p{
     font-family: sans-serif;
     font-weight: 300px;
@@ -11,10 +15,12 @@ p{
 
 header{
     height: 120px;
+    position: relative;
 }
 
 main{
     margin: 0 auto;
+    height: 100vh;
 }
 
 .logo{
@@ -45,13 +51,6 @@ a:hover{
     text-decoration: underline;
 }
 
-.fixed{
-    display: flex;
-    position: fixed;
-    font-family: sans-serif;
-    align-items: center;
-}
-
 .row{
     display: flex;
     flex-direction: row;
@@ -64,6 +63,9 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
 }
 
 .start{
@@ -82,7 +84,6 @@ a:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 800px;
     background-color: #6099f5de;
     
 }
@@ -121,11 +122,18 @@ h1{
     line-height: 40px;
 }
 
-.jumbo{  
+.jumbo{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 1000px;
     height: 500px;
+}
+
+.jumbo > img{
+    position: absolute;
+    left: 50px;
+    height: 600px;
 }
 
 .button-try{
@@ -149,8 +157,130 @@ h1{
 
 .blue-button  button a{
     color: white;
+    font-size: 20px;
+    padding: 20px;
 }
 
 .white-button > a {
     color: black;
+}
+
+/*Business section*/
+
+.headline{  
+    width: 100%;
+    height: 200px;
+}
+
+.container-business{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.container-business > h2{
+    font-size: 60px;
+}
+
+.fake-radio{
+    margin-left: -1em;
+    padding: 50px;
+    font-size: 30px;
+}
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    margin: auto;
+    width: 400px;
+    height: 1500px;
+    border: 1px solid rgba(128, 128, 128, 0.42);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hr{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.42);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.hr > span{
+    font-size: 20px;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+#cost > span{
+    color: grey;
+    
+}
+
+.type-of-plan{
+    padding: 30px;
+}
+
+.type-of-plan > h2{
+    padding-bottom: 20px;
+}
+
+.function{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    
+}
+
+.plan{
+    display: block;
+    margin-block: 20px;
+}
+
+.buy-now{
+    margin-top: 15px;
+}
+
+.buy-now > a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#small-hr{
+    width: 20%;
+    height: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.42);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.foot-section{
+    margin-block: 50px;
+}
+
+.file{
+    margin-block: 20px;
+    font-size: 20px;
+}
+
+.file > span > i{
+    color: blue;
 }
