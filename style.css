@@ -8,19 +8,16 @@ html{
     font-family: "Sharp Grotesk 23", "Sharp Grotesk 23 KR", "Sharp Grotesk 23 Thai", "Helvetica (Sharp Grotesk 23 Fallback)", "Arial (Sharp Grotesk 23 Fallback)", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-p{
-    font-family: sans-serif;
-    font-weight: 300px;
-}
 
 header{
     height: 120px;
     position: relative;
+    width: 100%;
 }
 
 main{
     margin: 0 auto;
-    height: 100vh;
+    
 }
 
 .logo{
@@ -47,11 +44,16 @@ a{
     text-decoration: none;
 }
 
+header nav ul li a {
+
+}
+
 a:hover{
     text-decoration: underline;
 }
 
 .row{
+    height: 100%;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -79,6 +81,11 @@ a:hover{
 .start a{
     color: white;
 }
+
+#arrow-down a{
+    color: black;
+}
+
 
 .try-free{
     display: flex;
@@ -220,7 +227,7 @@ h1{
     border-right: none;
 }
 
-.hr > span{
+.hr > .three-cards {
     font-size: 20px;
     position: absolute;
     left: 40%;
@@ -243,8 +250,15 @@ h1{
 .function{
     margin-top: 70px;
     margin-bottom: 70px;
-    font-size: 20px;
-    
+    font-size: 20px;   
+}
+
+#fatturazione_mensile, #fatturazione_annuale{
+    accent-color: blue;
+}
+
+#fatturazione-lbl{
+    margin-right: 50px;
 }
 
 .plan{
@@ -283,4 +297,213 @@ h1{
 
 .file > span > i{
     color: blue;
+}
+
+.container-team{
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    width: 1280px;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.42);
+}
+
+.team-section {
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
+
+.enterprise{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.fix-font{
+    font-size: 20px;
+    color: black;
+}
+
+.enterprise > h2{
+    margin-bottom: 20px;
+}
+
+.new-button > button{
+    position: absolute;
+    right: 30px;
+    border: none;
+    background-color: #0061fe;
+    padding-block: 10px;
+    padding-inline: 25px;
+}
+
+.new-button > button > a{
+    font-size: 20px;
+    color: white;
+}
+
+.partner-drop{
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    margin: auto;
+}
+
+.item-partner{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-partner > img{
+    width: 700px;
+}
+
+.paragraph-partner{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.paragraph-partner > h2{
+    font-size: 30px;
+}
+
+#partner{
+    margin-block: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.white-button > #partner-button{
+    padding: 15px;
+    margin-top: 15px;
+}
+
+#partner-button > a{
+    color: rgb(108, 108, 108);
+    font-size: 25px;
+}
+
+
+.container-three-cards{
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    margin: auto;
+}
+
+.title > h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.item-card{
+    margin: auto;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-card > img{
+    width: 100%;
+    height: 300px;
+}
+.item-card > h2{
+    font-size: 30px;
+    margin-block: 20px;
+}
+
+.item-card p{
+    font-size: 24px;
+}
+
+.plus{
+    width: 1280px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.plus > h2{
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.plus > a{
+    color: blue;
+    text-decoration: underline;
+}
+
+.container-three-column{
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-design{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: calc( 100% / 3 );
+    height: 100%;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+
+.pattern{
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern > img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern > .green-img{
+    width: 100%;
+}
+
+.img-border{
+    background-color: #a2d39b;
+    border: 15px solid #d1e9cd;
+}
+
+.img-red{
+    background-color: #61082b;
+}
+
+.red-arizona{
+    width: 200px;
+}
+
+.img-blue{
+    background-color: #0093ce;
+}
+
+.blue-img, .red-topps, .red-arizona{
+    fill: white;
+}
+
+.img-topps{
+    background-color: #ff1c1c;
+}
+
+.red-topps{
+    width: 200px;
 }
