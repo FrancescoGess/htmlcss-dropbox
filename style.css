@@ -438,7 +438,6 @@ h1{
 }
 
 .container-three-column{
-    border: 1px solid black;
     width: 100%;
     height: 600px;
     display: flex;
@@ -448,9 +447,9 @@ h1{
 .item-design{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     width: calc( 100% / 3 );
     height: 100%;
+    margin-inline: 10px;
 }
 
 .column{
@@ -476,7 +475,7 @@ h1{
 }
 
 .pattern > .green-img{
-    width: 100%;
+    width: 200px;
 }
 
 .img-border{
@@ -496,9 +495,6 @@ h1{
     background-color: #0093ce;
 }
 
-.blue-img, .red-topps, .red-arizona{
-    fill: white;
-}
 
 .img-topps{
     background-color: #ff1c1c;
@@ -506,4 +502,108 @@ h1{
 
 .red-topps{
     width: 200px;
+}
+
+.img-blue-lonely{
+    background-color: #0d2481;
+}
+
+.bg-bycicle{
+    background-color: #d5001f;
+}
+
+.red-channel{
+    width: 200px;
+}
+
+.img-channel{
+    background-color: #ffd830;
+}
+
+.blue-lonely{
+    width: 200px;
+}
+
+.red-bycicle{
+    width: 200px;
+}
+
+.overflow-paragraph{
+    overflow: scroll;
+}
+
+.small-hr-overflow{
+    width: 100px;
+    border: 1px solid grey;
+    border-top: none;
+    margin-left: 10px;
+}
+
+.paragraph-overflow{
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+
+.headline-color{
+    background-color: #b4d0e7;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.headline-color > h2 {
+    color: #61082b;
+    font-size: 70px;
+    text-align: start;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+
+.button{
+    position: relative;
+}
+
+.foot-button{
+    padding-block: 20px;
+    padding-inline: 60px;
+    position: absolute;
+    top: 70px;
+    right: 150px;
+
+    font-size: 25px;
+    border: none;
+}
+
+.container-ask{
+    width: 1280px;
+    margin: auto;
+    
+}
+
+.container-ask > h2{
+    font-size: 50px;
+}
+
+.long-hr{
+    display: flex;
+    align-items: center;
+}
+
+.long-hr{
+    display: block;
+    padding-block: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-difference{
+    margin-top: 60px;
+}
+
+.black-container{
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
 }
