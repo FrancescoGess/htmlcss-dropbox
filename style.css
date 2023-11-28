@@ -16,8 +16,7 @@ header{
 }
 
 main{
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .logo{
@@ -78,6 +77,10 @@ a:hover{
     border: none;
 }
 
+.start:hover{
+    background-color: #0061fe85;
+}
+
 .start a{
     color: white;
 }
@@ -85,7 +88,6 @@ a:hover{
 #arrow-down a{
     color: black;
 }
-
 
 .try-free{
     display: flex;
@@ -146,7 +148,6 @@ h1{
 .button-try{
     width: 70px;
     height: 35px;
-    border: 1px solid lime;
 }
 
 .blue-button{
@@ -161,6 +162,7 @@ h1{
     padding: 10px;
     font-size: 30px;
 }
+
 
 .blue-button  button a{
     color: white;
@@ -472,6 +474,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: invert(1);
 }
 
 .pattern > .green-img{
@@ -529,7 +532,7 @@ h1{
 }
 
 .overflow-paragraph{
-    overflow: scroll;
+    overflow: auto;
 }
 
 .small-hr-overflow{
@@ -585,12 +588,18 @@ h1{
     font-size: 50px;
 }
 
-.long-hr{
-    display: flex;
-    align-items: center;
+.long-hr:hover + div{
+   display: block;
+}
+
+.paragraph-hover{
+    display: none;
+    font-size: 24px;
 }
 
 .long-hr{
+    display: flex;
+    align-items: center;
     display: block;
     padding-block: 50px;
     font-size: 25px;
